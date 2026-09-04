@@ -14,7 +14,7 @@ Turns a business goal into structured tasks and routes each one to an AI agent, 
 - Each run writes an audit row with cost, latency, and outcome.
 - Royalty settlement sits behind a provider interface: a mock, a local Anvil chain, and a Sepolia testnet adapter share one state machine.
 - The double-billing race is closed under a lock and proven with `threading.Barrier`: 1 success, 4 rejections, 1 ledger row.
-- 653 hermetic tests run in about 33 s. Test code outnumbers backend code.
+- 1387 hermetic tests run in about 60 s. Test code outnumbers backend code. UI is bilingual, English by default.
 
 Flask, React, SQLite, MCP. Deployed on Railway and Vercel.
 
